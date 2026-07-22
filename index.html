@@ -3,27 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Триада Тела | Выездной массаж Абакан, Кызыл, Красноярск</title>
-  <meta name="description" content="Выездной массаж по личной технике Триада. Юмэйхо, аккупрессура, техника фитоцентра Прасковья. Абакан, Кызыл, Красноярск.">
+  <title>Триада Тела — Выездной массаж | Абакан, Кызыл, Красноярск</title>
+  <meta name="description" content="Выездной массаж по авторской технике Триада. Синтез юмэйхо, аккупрессуры и техники фитоцентра Прасковья. Абакан, Кызыл, Красноярск.">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  
+
   <style>
-        /* === GOOGLE FORM IFRAME === */
-    .form-iframe-wrapper {
-      max-width: 640px;
-      margin: 30px auto;
-      border-radius: 8px;
-      overflow: hidden;
-      background: #1f1f1f;
-      border: 1px solid #2a2a2a;
+    /* ========================================
+       ТРИАДА ТЕЛА — ОСНОВНЫЕ СТИЛИ
+       Тёмный премиум-минимализм, восточный подтон
+       ======================================== */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    
-    .form-iframe-wrapper iframe {
-      display: block;
-      background: #1f1f1f;
+
+    body {
+      background-color: #1a1a1a;
+      color: #e8e0d5;
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
     }
-    
-    /* === ГЕРОЙ === */
+
+    /* --- ГЕРОЙ (первый экран) --- */
     .hero {
       text-align: center;
       padding: 100px 20px 60px;
@@ -31,7 +36,7 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     .hero::before {
       content: '';
       position: absolute;
@@ -45,13 +50,13 @@
       opacity: 0.25;
       z-index: 0;
     }
-    
+
     .hero-content {
       position: relative;
       z-index: 1;
     }
-    
-    /* === ЛОГОТИП В ГЕРОЕ === */
+
+    /* --- ЛОГОТИП В ГЕРОЕ --- */
     .hero-logo {
       width: 80px;
       height: 80px;
@@ -61,15 +66,15 @@
       padding: 3px;
       background: #1a1a1a;
     }
-    
+
     .hero-logo img {
       width: 100%;
       height: 100%;
       border-radius: 50%;
       object-fit: cover;
     }
-    
-    /* === ЗАГОЛОВКИ === */
+
+    /* --- ТИПОГРАФИКА --- */
     h1 {
       font-size: 3.2rem;
       font-weight: 300;
@@ -78,7 +83,7 @@
       margin-bottom: 15px;
       text-transform: uppercase;
     }
-    
+
     .hero-subtitle {
       font-size: 1.4rem;
       font-weight: 300;
@@ -86,7 +91,7 @@
       margin-bottom: 25px;
       letter-spacing: 0.05em;
     }
-    
+
     .hero-cities {
       font-size: 0.9rem;
       font-weight: 400;
@@ -95,17 +100,19 @@
       margin-bottom: 40px;
       text-transform: uppercase;
     }
-    
-    /* === СЕКЦИИ === */
+
+    /* --- СЕКЦИИ --- */
     .section {
       max-width: 720px;
       margin: 0 auto;
       padding: 60px 20px;
       border-bottom: 1px solid #2a2a2a;
     }
-    
-    .section:last-of-type { border-bottom: none; }
-    
+
+    .section:last-of-type {
+      border-bottom: none;
+    }
+
     .section-title {
       font-size: 1.6rem;
       font-weight: 300;
@@ -114,8 +121,8 @@
       letter-spacing: 0.08em;
       text-align: center;
     }
-    
-    /* === КНОПКА TELEGRAM === */
+
+    /* --- КНОПКА TELEGRAM --- */
     .btn-telegram {
       display: inline-block;
       background-color: #d4a853;
@@ -129,38 +136,38 @@
       transition: all 0.3s ease;
       margin-top: 20px;
     }
-    
+
     .btn-telegram:hover {
       background-color: #c49a3c;
       color: #0f0f0f;
       transform: translateY(-1px);
     }
-    
-    /* === ТАБЛИЦА УСЛУГ === */
+
+    /* --- ТАБЛИЦА УСЛУГ --- */
     .services-table {
       width: 100%;
       border-collapse: collapse;
       margin: 30px 0;
     }
-    
+
     .services-table td {
       padding: 12px 8px;
       border-bottom: 1px solid #2a2a2a;
       font-weight: 300;
     }
-    
+
     .services-table td:first-child {
       color: #c9b896;
       font-weight: 400;
     }
-    
+
     .services-table td:last-child {
       text-align: right;
       color: #d4a853;
       white-space: nowrap;
     }
-    
-    /* === ГЕОГРАФИЯ === */
+
+    /* --- ГЕОГРАФИЯ --- */
     .geo-block {
       margin: 20px 0 30px;
       padding: 25px;
@@ -168,29 +175,31 @@
       border-radius: 4px;
       border-left: 3px solid #d4a853;
     }
-    
+
     .geo-block h4 {
       color: #d4a853;
       font-weight: 400;
       font-size: 1.1rem;
       margin-bottom: 8px;
     }
-    
+
     .geo-block p {
       color: #a09580;
       font-size: 0.95rem;
       line-height: 1.6;
     }
-    
-    /* === ТЕКСТ === */
+
+    /* --- ТЕКСТОВЫЕ БЛОКИ --- */
     .text-block {
       color: #a09580;
       font-weight: 300;
       line-height: 1.8;
     }
-    
-    .text-block p { margin-bottom: 16px; }
-    
+
+    .text-block p {
+      margin-bottom: 16px;
+    }
+
     .text-note {
       margin-top: 20px;
       padding: 15px 20px;
@@ -200,81 +209,26 @@
       color: #7a6f5d;
       border: 1px solid #2a2a2a;
     }
-    
-    /* === ФОРМА ЗАПИСИ === */
-    .booking-form {
-      max-width: 500px;
+
+    /* --- GOOGLE FORMS IFRAME --- */
+    .form-iframe-wrapper {
+      max-width: 640px;
       margin: 30px auto;
-    }
-    
-    .form-group {
-      margin-bottom: 18px;
-    }
-    
-    .form-group label {
-      display: block;
-      color: #8a7e6b;
-      font-size: 0.85rem;
-      margin-bottom: 6px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-    
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 12px 14px;
+      border-radius: 8px;
+      overflow: hidden;
       background: #1f1f1f;
       border: 1px solid #2a2a2a;
-      border-radius: 4px;
-      color: #e8e0d5;
-      font-size: 1rem;
-      font-family: inherit;
-      transition: border-color 0.3s ease;
     }
-    
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: #d4a853;
-    }
-    
-    .form-group textarea {
-      min-height: 80px;
-      resize: vertical;
-    }
-    
-    .btn-submit {
+
+    .form-iframe-wrapper iframe {
       display: block;
       width: 100%;
-      padding: 14px;
-      background-color: #d4a853;
-      color: #1a1a1a;
+      height: 850px;
       border: none;
-      border-radius: 4px;
-      font-size: 1rem;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      cursor: pointer;
-      transition: all 0.3s ease;
+      background: #1f1f1f;
     }
-    
-    .btn-submit:hover {
-      background-color: #c49a3c;
-    }
-    
-    .form-success {
-      display: none;
-      text-align: center;
-      padding: 20px;
-      color: #d4a853;
-      font-weight: 300;
-      font-size: 1.1rem;
-    }
-    
-    /* === ПОДВАЛ === */
+
+    /* --- ПОДВАЛ --- */
     .footer {
       text-align: center;
       padding: 40px 20px;
@@ -282,30 +236,40 @@
       font-size: 0.8rem;
       letter-spacing: 0.05em;
     }
-    
+
     .footer a {
       color: #6a5f4d;
       text-decoration: none;
     }
-    
-    /* === АДАПТИВ === */
+
+    /* --- АДАПТИВ --- */
     @media (max-width: 600px) {
-      h1 { font-size: 2rem; letter-spacing: 0.2em; }
-      .hero { padding: 60px 15px 40px; }
-      .section { padding: 40px 15px; }
+      h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2em;
+      }
+
+      .hero {
+        padding: 60px 15px 40px;
+      }
+
+      .section {
+        padding: 40px 15px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- ═══════════ ГЕРОЙ ═══════════ -->
+  <!-- ========================================
+       ГЕРОЙ
+       ======================================== -->
   <div class="hero">
     <div class="hero-content">
-      <!-- Логотип (замени src на свой, когда загрузишь) -->
       <div class="hero-logo">
         <img src="assets/images/logo.png" alt="Триада Тела" onerror="this.style.display='none'; this.parentElement.style.display='none';">
       </div>
-      
+
       <h1>ТРИАДА ТЕЛА</h1>
       <p class="hero-subtitle">Выездной массаж, которому доверяют </p>
       <p class="hero-cities">Абакан · Кызыл · Красноярск</p>
@@ -313,64 +277,128 @@
     </div>
   </div>
 
-  <!-- ═══════════ О МЕТОДЕ ═══════════ -->
+  <!-- ========================================
+       О МЕТОДЕ
+       ======================================== -->
   <div class="section">
     <h2 class="section-title">Три источника. Одно прикосновение</h2>
     <div class="text-block">
-      <p>Триада — это сплав трёх мощных оздоровительных традиций, которые я соединил в одну сессию. Глубокое вытяжение позвоночника и суставов по принципам японского <strong>юмэйхо</strong> мягко снимает зажимы, копившиеся месяцами. Точечное <strong>аккупрессурное воздействие</strong> пробуждает «спящие» зоны спины и головы — уходит напряжение из глаз, висков, затылка. Завершает каскад обволакивающая <strong>техника фитоцентра Прасковья</strong>, перезагружающая нервную систему.</p>
-      <p>Это не просто массаж. Это состояние, в котором тело дышит свободой, а голова становится ясной.</p>
+      <p>
+        Триада — это сплав трёх мощных оздоровительных традиций, соединённых в одну сессию.
+        Глубокое вытяжение позвоночника и суставов по принципам японского
+        <strong>юмэйхо</strong> мягко снимает зажимы, копившиеся месяцами.
+        Точечное <strong>аккупрессурное воздействие</strong> пробуждает «спящие» зоны
+        спины и головы — уходит напряжение из глаз, висков, затылка.
+        Завершает каскад обволакивающая <strong>техника фитоцентра Прасковья</strong>,
+        перезагружающая нервную систему.
+      </p>
+      <p>
+        Это не просто массаж. Это состояние, в котором тело дышит свободой,
+        а голова становится ясной.
+      </p>
     </div>
   </div>
 
-  <!-- ═══════════ УСЛУГИ ═══════════ -->
+  <!-- ========================================
+       УСЛУГИ И ЦЕНЫ
+       ======================================== -->
   <div class="section">
     <h2 class="section-title">Услуги и цены</h2>
     <table class="services-table">
-      <tr><td>Триада. Спина</td><td>60 мин</td><td>1 350 ₽</td></tr>
-      <tr><td>Массаж ног</td><td>30 мин</td><td>850 ₽</td></tr>
-      <tr><td>Массаж кистей</td><td>20 мин</td><td>650 ₽ </td></tr>
-      <tr><td>Массаж всего тела</td><td>90 мин</td><td>по запросу</td></tr>
-      <tr><td>Массаж ступней</td><td>20 мин</td><td>по запросу</td></tr>
-      <tr><td>Массаж головы</td><td>10 мин</td><td>250 руб</td></tr>
+      <tr>
+        <td>Триада. Спина</td>
+        <td>60 мин</td>
+        <td>1 350 ₽</td>
+      </tr>
+      <tr>
+        <td>Массаж ног</td>
+        <td>30 мин</td>
+        <td>850 ₽</td>
+      </tr>
+      <tr>
+        <td>Массаж кистей</td>
+        <td>20 мин</td>
+        <td>650 ₽ (Абакан)</td>
+      </tr>
+      <tr>
+        <td>Массаж всего тела</td>
+        <td>90 мин</td>
+        <td>по запросу</td>
+      </tr>
+      <tr>
+        <td>Массаж ступней</td>
+        <td>20 мин</td>
+        <td>по запросу</td>
+      </tr>
+      <tr>
+        <td>Массаж головы</td>
+        <td>10 мин</td>
+        <td>по запросу</td>
+      </tr>
     </table>
   </div>
 
-  <!-- ═══════════ ГЕОГРАФИЯ ═══════════ -->
+  <!-- ========================================
+       ГЕОГРАФИЯ ВЫЕЗДА
+       ======================================== -->
   <div class="section">
     <h2 class="section-title">География выезда</h2>
+
     <div class="geo-block">
       <h4>Абакан</h4>
-      <p>Бесплатный выезд в любой район города. Кушетка, кокосовое масло и атмосфера — уже в пути.</p>
+      <p>
+        Бесплатный выезд в любой район города. Кушетка, кокосовое масло и атмосфера —
+        уже в пути.
+      </p>
     </div>
+
     <div class="geo-block">
       <h4>Кызыл и Красноярск</h4>
-      <p>Выезд курсами. Минимум 5 человек, курс из 10 сеансов. Пишите — соберём группу под ваши даты.</p>
+      <p>
+        Выезд курсами. Минимум 5 чел, курс из 10 сеансов.
+        Пишите — соберём группу под ваши даты.
+      </p>
     </div>
   </div>
 
-  <!-- ═══════════ О МАСТЕРЕ ═══════════ -->
+  <!-- ========================================
+       О МАСТЕРЕ
+       ======================================== -->
   <div class="section">
     <h2 class="section-title">Человек, который слышит тело</h2>
     <div class="text-block">
-      <p>Я без кабинета и белого халата. За спиной более 200 довольных клиентов в оздоровительном центре. У меня — кушетка, тёплое кокосовое масло и личная методика, собранная из трёх систем оздоровления. Моя задача — чтобы вы выдохнули, расслабились и почувствовали, что спина снова ваша. Без диагнозов, без «поболит и перестанет». Только бережное прикосновение и результат, который вы ощутите сразу.</p>
+      <p>
+        Я не врач. У меня нет кабинета и белого халата.
+        У меня — кушетка, тёплое кокосовое масло и личная методика,
+        собранная из трёх систем оздоровления.
+        Моя задача — чтобы вы выдохнули, расслабились и почувствовали,
+        что спина снова ваша. Без диагнозов, без «поболит и перестанет».
+        Только бережное прикосновение и результат, который вы ощутите сразу.
+      </p>
     </div>
     <div class="text-note">
-      ⚠ Противопоказания общемедицинские: онкология, повышенное давление, температура, острые боли, кожные заболевания в стадии обострения. В остальном — добро пожаловать на кушетку.
+      ⚠ Противопоказания общемедицинские: повышенная температура, острые боли,
+      кожные заболевания в стадии обострения. В остальном — добро пожаловать
+      на кушетку.
     </div>
   </div>
 
-   <!-- ═══════════ ЗАПИСЬ ═══════════ -->
+  <!-- ========================================
+       ЗАПИСЬ (Google Forms)
+       ======================================== -->
   <div class="section">
     <h2 class="section-title">Запись</h2>
-    
+
     <div class="form-iframe-wrapper">
-      <iframe src="https://docs.google.com/forms/d/e/forms.gle/kwdkPyZ17fWC9yKJ9/viewform?embedded=true" 
-              width="100%" 
-              height="800" 
-              frameborder="0" 
-              marginheight="0" 
-              marginwidth="0">
-        Загрузка формы...
+      <iframe
+        src="https://docs.google.com/forms/d/e/https://forms.gle/2Y1HWk771iZzdgQg7/viewform?embedded=true"
+        width="100%"
+        height="850"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+      >
+        Загрузка формы…
       </iframe>
     </div>
 
@@ -380,61 +408,12 @@
     </p>
   </div>
 
-  <!-- ═══════════ ПОДВАЛ ═══════════ -->
+  <!-- ========================================
+       ПОДВАЛ
+       ======================================== -->
   <div class="footer">
-    <p>Триада Тела &copy; 2026 · <a href="https://t.me/rus878">@rus878</a></p>
+    <p>Триада Тела © 2026 · <a href="https://t.me/rus878">@rus878</a></p>
   </div>
-
-  <!-- ═══════════ СКРИПТ ОТПРАВКИ ═══════════ -->
-  <script>
-    function submitForm() {
-      var name = document.getElementById('clientName').value.trim();
-      var city = document.getElementById('clientCity').value;
-      var service = document.getElementById('clientService').value;
-      var contact = document.getElementById('clientContact').value.trim();
-      var message = document.getElementById('clientMessage').value.trim();
-      
-      // Валидация
-      if (!name || !city || !service || !contact) {
-        alert('Пожалуйста, заполните обязательные поля: имя, город, услуга и контакт.');
-        return;
-      }
-      
-      // Собираем данные
-      var now = new Date();
-      var data = {
-        date: now.toLocaleDateString('ru-RU'),
-        time: now.toLocaleTimeString('ru-RU', {hour: '2-digit', minute:'2-digit'}),
-        name: name,
-        service: service,
-        city: city,
-        telegram: contact,
-        message: message
-      };
-      
-      // ТВОЙ URL ИЗ GOOGLE APPS SCRIPT — ЗАМЕНИ НА СВОЙ
-      var url = 'https://script.google.com/macros/library/d/forms.gle/kwdkPyZ17fWC9yKJ9/2';
-      
-      // Отправляем
-      fetch(url, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      })
-      .then(function() {
-        // Успех
-        document.getElementById('bookingForm').style.display = 'none';
-        document.getElementById('formSuccess').style.display = 'block';
-      })
-      .catch(function() {
-        // Ошибка — клиент всё равно может написать в Telegram
-        document.getElementById('bookingForm').style.display = 'none';
-        document.getElementById('formSuccess').innerHTML = '<p>⚠ Не удалось отправить заявку автоматически.</p><p>Пожалуйста, напишите мне напрямую:</p><a href="https://t.me/rus878" class="btn-telegram">Написать в Telegram</a>';
-        document.getElementById('formSuccess').style.display = 'block';
-      });
-    }
-  </script>
 
 </body>
 </html>

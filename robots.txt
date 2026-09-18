@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sushisellvluki-tech.github.io/triada-touch/sitemap.xml
+
